@@ -1,11 +1,13 @@
-# node-resourcehacker
+# @lorki97/node-resourcehacker
 
 Just another Resource Hacker wrapper for node.js.
+
+Updated original node-resourcehacker to utilize the new ResourceHacker CLI syntax.
 
 ## Installation
 
 ```
-$ npm install node-resourcehacker --save
+$ npm install @lorki97/node-resourcehacker --save
 ```
 
 During the first usage, the Resource Hacker binary will be automatically downloaded. I can't include a copy of Resource Hacker because it's illegal. Try setting `HTTP_PROXY` if you experience a slow download speed.
@@ -16,7 +18,7 @@ By specifying environment variable `SOURCE_RESOURCE_HACKER`, we are able to down
 
 ```javascript
 
-const resourceHacker = require('node-resourcehacker');
+const resourceHacker = require('@lorki97/node-resourcehacker');
 
 // Use the beta release of Resource Hacker.
 process.env['SOURCE_RESOURCE_HACKER'] = 'http://www.angusj.com/resourcehacker/resource_hacker_beta.zip';
